@@ -43,43 +43,8 @@ A single record in one table is associated with multiple records in another tabl
 ### 3. Many-to-Many (N:M)
 Records in one table are associated with multiple records in another table, and vice versa.
 
-## 4. Entity-Relationship (ER) Diagrams
 
-An **Entity-Relationship Diagram (ERD)** is a graphical representation of the entities (tables) in a database and their relationships.
-
-### Components of an ER Diagram:
-- **Entity**: Represents a table in the database.
-- **Attribute**: Attributes are the columns of a table.
-- **Relationship**: Relationships between entities.
-- **Primary Key (PK)**: The unique identifier for each entity.
-- **Foreign Key (FK)**: A reference to a primary key in another entity.
-
-### Example of an ER Diagram:
-```
-    +------------+         +------------+
-    | Customers  |         |   Orders   |
-    +------------+         +------------+
-    | CustomerID | <------ | OrderID    |
-    | Name       |         | OrderDate  |
-    | Email      |         | CustomerID |
-    +------------+         +------------+
-          |                       |
-          |-----------------------|
-            One-to-Many Relationship
-```
-
-### Steps to Create an ER Diagram:
-1. **Identify Entities**: Determine the main entities in your database. 
-2. **Identify Attributes**: List the key attributes for each entity.
-3. **Identify Relationships**: Define how the entities relate to each other.
-4. **Draw the ER Diagram**: Use rectangles for entities, ovals for attributes, and diamonds for relationships.
-
-### Types of Relationships in ER Diagrams:
-- **One-to-One (1:1)**: Example: A person and their passport.
-- **One-to-Many (1:N)**: Example: A customer and their orders.
-- **Many-to-Many (N:M)**: Example: Students and courses.
-
-## 5. Normalization in Relational Databases
+## 4. Normalization in Relational Databases
 
 **Normalization** is the process of organizing data within a database to reduce redundancy and ensure data integrity.
 
@@ -92,7 +57,7 @@ All non-primary key attributes must be fully dependent on the primary key.
 ### Third Normal Form (3NF)
 All columns must be dependent on the primary key and nothing else.
 
-## 6. Example of Normalizing a Database
+## 5. Example of Normalizing a Database
 
 ### Unnormalized Table
 
@@ -141,4 +106,39 @@ Remove transitive dependencies.
 | 1         | Math 101     |
 | 2         | Physics 101  |
 
+## 6. Entity-Relationship (ER) Diagrams
+
+An **Entity-Relationship Diagram (ERD)** is a graphical representation of the entities (tables) in a database and their relationships.
+
+### Components of an ER Diagram:
+- **Entity**: Represents a table in the database.
+- **Attribute**: Attributes are the columns of a table.
+- **Relationship**: Relationships between entities.
+- **Primary Key (PK)**: The unique identifier for each entity.
+- **Foreign Key (FK)**: A reference to a primary key in another entity.
+
+### Example of an ER Diagram:
+```
+    +------------+         +------------+
+    | Customers  |         |   Orders   |
+    +------------+         +------------+
+    | CustomerID | <------ | OrderID    |
+    | Name       |         | OrderDate  |
+    | Email      |         | CustomerID |
+    +------------+         +------------+
+          |                       |
+          |-----------------------|
+            One-to-Many Relationship
+```
+
+### Steps to Create an ER Diagram:
+1. **Identify Entities**: Determine the main entities in your database.
+2. **Identify Attributes**: List the key attributes for each entity.
+3. **Identify Relationships**: Define how the entities relate to each other.
+4. **Draw the ER Diagram**: Use rectangles for entities, ovals for attributes, and diamonds for relationships.
+
+### Types of Relationships in ER Diagrams:
+- **One-to-One (1:1)**: Example: A person and their passport.
+- **One-to-Many (1:N)**: Example: A customer and their orders.
+- **Many-to-Many (N:M)**: Example: Students and courses.
 
