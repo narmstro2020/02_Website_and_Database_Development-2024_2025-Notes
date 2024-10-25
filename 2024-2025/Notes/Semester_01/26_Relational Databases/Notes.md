@@ -84,6 +84,7 @@ Remove transitive dependencies.
 |-----------|--------------|
 | 1         | Alice Smith  |
 | 2         | Bob Jones    |
+| 3         | Alice Smith  |
 
 #### Courses Table
 
